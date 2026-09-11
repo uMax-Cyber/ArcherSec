@@ -8,35 +8,35 @@
 
 # ArcherSec — Open-source klonlash va tasvirlash majmuasi
 
-Bepul open-source klonlash, disk tasvirlarini yaratish va tiklash yechimi. PXE orqali Windows joylashtirish, PartClone asosida disk tasvirlarini yaratish, mashinalarni veb-interface orqali boshqarish. Imkoniyatlar: xotira va disk testlari, diskni tozalash, antivirus tekshiruvi, vazifalarni rejalashtirish, inventarizatsiya, dasturlarni masofadan oʻrnatish.
+Bepul open-source yechim: kompyuterlarni klonlash, disk tasvirlarini yaratish va tiklash. Windows PXE orqali joylashtiriladi, tasvirlar PartClone bilan yaratiladi, barcha mashinalar veb-interface orqali boshqariladi. Qoʻshimcha imkoniyatlar: xotira va disk testlari, diskni tozalash (wipe), antivirus tekshiruvi, vazifalarni rejalashtirish, inventarizatsiya va dasturlarni masofadan oʻrnatish.
 
 ## ℹ️ Legacy loyiha
 
-Bu — havola va tarix uchun saqlanib qolgan erta davrdagi PHP asosidagi xavfsizlik va tasvirlash vositalari toʻplami. Faol ravishda qoʻllab-quvvatlanmaydi. Avtomatlashtirish uchun mahsulot darajasidagi voris yondashuvlar yangi repozitoriyalarda joylashgan (OpsPlaybook va boshqalar).
+Bu — PHP asosidagi ilk xavfsizlik va tasvirlash vositalari toʻplami, havola va tarix uchun saqlanadi. Faol qoʻllab-quvvatlanmaydi. Avtomatlashtirishning zamonaviy, ishonchli yondashuvlari yangi repozitoriyalarda (OpsPlaybook va boshqalar).
 
 ## Imkoniyatlar
 
 | Funksiya | Tavsif |
 |----------|--------|
-| PXE Boot | Joylashtirish uchun tarmoq orqali yuklash |
-| Disk tasvirlari | PartClone asosida tasvir yaratish/tiklash |
-| Veb-interface | Markazlashgan boshqaruv |
-| Temur testlar | Xotira va disk diagnostikasi |
-| Diskni tozalash | Maʼlumotlarni xavfsiz oʻchirish |
-| Antivirus | Viruslarni tekshirish |
-| Inventarizatsiya | Uskunalar va dasturlarni hisobga olish |
-| Masofadan oʻrnatish | Roʻyxatga olingan mashinalarga dasturlar joylashtirish |
-| Vazifa rejalashtirish | Rejalashtirilgan tasvirlash va texnik xizmat vazifalari |
+| PXE Boot | Kompyuter tarmoqdan yuklanadi va joylashtiriladi |
+| Disk tasvirlari | Tasvirlar PartClone asosida yaratiladi va tiklanadi |
+| Veb-interface | Barcha mashinalar bir joydan boshqariladi |
+| Xotira/disk testlari | Jihozlar diagnostika qilinadi |
+| Diskni tozalash | Maʼlumotlar qaytarib boʻlmas darajada oʻchiriladi (wipe) |
+| Antivirus | Viruslar tekshiriladi |
+| Inventarizatsiya | Uskuna va dasturlar roʻyxati yuritiladi |
+| Masofadan oʻrnatish | Roʻyxatdagi mashinalarga dasturlar joylashtiriladi |
+| Vazifa rejalashtirish | Tasvirlash va texnik xizmat reja boʻyicha bajariladi |
 
 ## Qoʻllab-quvvatlanadigan OS
 Windows XP, Vista, 7, 8, 10 (PXE orqali joylashtirish)
 
 ## Tarkibiy qismlar
-- `src/` — Asosiy manba kodi (iPXE)
+- `src/` — Asosiy manba kod (iPXE)
 - `bin/` — Oʻrnatuvchi va binar fayllar
 - `lib/` — Platforma kutubxonalari (Arch, Red Hat, Ubuntu)
-- `utils/` — Yordamchi skriptlar (zaxiralash, iPXE, yangilash)
-- `packages/` — Paket tavsiflari, xizmatlar, veb-interface
+- `utils/` — Yordamchi skriptlar (backup, iPXE, updater)
+- `packages/` — Paket tavsiflari, servislar, veb-interface
 - `SELinux/` — Xavfsizlik siyosatlari
 
 ## Skrinshot
@@ -53,10 +53,10 @@ cd bin && sudo ./installarcher.sh
 sudo ./installarcher.sh --uninstall
 ```
 
-Oʻrnatilgandan soʻng veb-interface Apache document rootidan xizmat koʻrsatadi (standart boʻyicha `/archer/`).
+Oʻrnatilgach, veb-interface Apache document root orqali xizmat qiladi (standart: `/archer/`).
 
 ## Litsenziya
-GPL-3.0 — [LICENSE](LICENSE) faylini qarang
+GPL-3.0 — batafsil [LICENSE](LICENSE) faylida
 
 ## 📬 Aloqa
 📧 **[allumaxmail@gmail.com](mailto:allumaxmail@gmail.com)**
