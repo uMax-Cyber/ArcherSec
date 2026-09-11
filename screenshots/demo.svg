@@ -2,20 +2,25 @@
 <rect width="800" height="300" fill="#1e1e2e" rx="8">
   <animate attributeName="opacity" values="0;1" dur="0.5s" fill="freeze"/>
 </rect>
-<rect width="800" height="30" fill="#181825" rx="8"/>
+<rect width="800" height="30" fill="#181825" rx="8"><animate attributeName="opacity" values="1;0.9;1" dur="4s" repeatCount="indefinite"/></rect>
 <circle cx="20" cy="15" r="6" fill="#f38ba8"/><circle cx="40" cy="15" r="6" fill="#f9e2af"/><circle cx="60" cy="15" r="6" fill="#a6e3a1"/>
 <text x="400" y="20" text-anchor="middle" fill="#cdd6f4" font-family="monospace" font-size="12">ArcherSec</text>
-<text x="15" y="60" fill="#a6e3a1" font-family="monospace" font-size="14" opacity="0">$ ls -la
-  <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.5s" fill="freeze"/></text>
-<text x="15" y="90" fill="#89b4fa" font-family="monospace" font-size="14" opacity="0">total 42
-  <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1s" fill="freeze"/></text>
-<text x="15" y="120" fill="#cdd6f4" font-family="monospace" font-size="14" opacity="0">drwxr-xr-x  scripts/  docs/  examples/
-  <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.5s" fill="freeze"/></text>
-<text x="15" y="150" fill="#cdd6f4" font-family="monospace" font-size="14" opacity="0">-rw-r--r--  README.md  LICENSE  .gitignore
-  <animate attributeName="opacity" values="0;1" dur="0.5s" begin="2s" fill="freeze"/></text>
-<text x="15" y="200" fill="#a6e3a1" font-family="monospace" font-size="14" opacity="0">✓ Ready
-  <animate attributeName="opacity" values="0;1" dur="0.5s" begin="2.5s" fill="freeze"/></text>
-<rect x="15" y="220" width="10" height="18" fill="#a6e3a1">
-  <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+<text x="15" y="60" fill="#a6e3a1" font-family="monospace" font-size="14" opacity="0">$ sudo ./installarcher.sh
+  <animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.3s" fill="freeze"/></text>
+<text x="15" y="90" fill="#89b4fa" font-family="monospace" font-size="14" opacity="0">* PXE server started  * Web GUI: http://server/archer/
+  <animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.0s" fill="freeze"/></text>
+<text x="15" y="120" fill="#cdd6f4" font-family="monospace" font-size="14" opacity="0">* Client boots via PXE → PartClone image deployed (Win10)
+  <animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.8s" fill="freeze"/></text>
+<text x="15" y="150" fill="#cdd6f4" font-family="monospace" font-size="14" opacity="0">* AV scan + inventory: 24 machines registered
+  <animate attributeName="opacity" values="0;1" dur="0.4s" begin="2.6s" fill="freeze"/></text>
+<text x="15" y="200" fill="#f9e2af" font-family="monospace" font-size="14" opacity="0">⚠ Wipe task queued for lab-pc-07 (secure erase)
+  <animate attributeName="opacity" values="0;1" dur="0.4s" begin="3.4s" fill="freeze"/>
+  <animate attributeName="fill" values="#f9e2af;#f38ba8;#f9e2af" begin="3.9s" dur="1.2s" repeatCount="indefinite"/></text>
+<text x="15" y="240" fill="#a6e3a1" font-family="monospace" font-size="14" opacity="0">✓ All tasks completed
+  <animate attributeName="opacity" values="0;1" dur="0.4s" begin="4.2s" fill="freeze"/>
+  <animate attributeName="fill" values="#a6e3a1;#94e2d5;#a6e3a1" begin="4.7s" dur="1.4s" repeatCount="indefinite"/></text>
+<rect x="15" y="262" width="10" height="18" fill="#a6e3a1" opacity="0">
+  <animate attributeName="opacity" values="0;1" dur="0.2s" begin="4.6s" fill="freeze"/>
+  <animate attributeName="opacity" values="1;0;1" dur="1s" begin="4.8s" repeatCount="indefinite"/>
 </rect>
 </svg>
