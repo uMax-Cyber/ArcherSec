@@ -1,0 +1,21 @@
+<svg width="800" height="300" xmlns="http://www.w3.org/2000/svg">
+<rect width="800" height="300" fill="#1e1e2e" rx="8">
+  <animate attributeName="opacity" values="0;1" dur="0.5s" fill="freeze"/>
+</rect>
+<rect width="800" height="30" fill="#181825" rx="8"/>
+<circle cx="20" cy="15" r="6" fill="#f38ba8"/><circle cx="40" cy="15" r="6" fill="#f9e2af"/><circle cx="60" cy="15" r="6" fill="#a6e3a1"/>
+<text x="400" y="20" text-anchor="middle" fill="#cdd6f4" font-family="monospace" font-size="12">ArcherSec</text>
+<text x="15" y="60" fill="#a6e3a1" font-family="monospace" font-size="14" opacity="0">$ ls -la
+  <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.5s" fill="freeze"/></text>
+<text x="15" y="90" fill="#89b4fa" font-family="monospace" font-size="14" opacity="0">total 42
+  <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1s" fill="freeze"/></text>
+<text x="15" y="120" fill="#cdd6f4" font-family="monospace" font-size="14" opacity="0">drwxr-xr-x  scripts/  docs/  examples/
+  <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.5s" fill="freeze"/></text>
+<text x="15" y="150" fill="#cdd6f4" font-family="monospace" font-size="14" opacity="0">-rw-r--r--  README.md  LICENSE  .gitignore
+  <animate attributeName="opacity" values="0;1" dur="0.5s" begin="2s" fill="freeze"/></text>
+<text x="15" y="200" fill="#a6e3a1" font-family="monospace" font-size="14" opacity="0">✓ Ready
+  <animate attributeName="opacity" values="0;1" dur="0.5s" begin="2.5s" fill="freeze"/></text>
+<rect x="15" y="220" width="10" height="18" fill="#a6e3a1">
+  <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+</rect>
+</svg>
